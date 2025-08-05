@@ -1,99 +1,147 @@
-Janus – GitHub README (English)
-
 # 🎮 Janus – eSports Info App
 
-**Janus** is an Android application developed by a student team, aiming to provide structured and comprehensive information about the top 3 competitive eSports: **League of Legends**, **CS:GO**, and **Dota II**.
+  ![alt text](./Janus.png)
 
-The app is designed to be user-friendly, informative for all ages, and visually appealing. Users can explore eSports teams, their history, players, and match data through a smooth interactive interface.
+##📋 Project Overview
 
----
+Janus is an Android application developed as part of the Human-Computer Interaction course at the International Hellenic University (DI.PA.E). The goal was to build an informative app about eSports teams and tournaments in three game categories: League of Legends (LoL), CS:GO, and Dota II.
 
-## 📸 Screenshots
+![alt text](./all.png)
 
-> ⚠️ _Add screenshots here as image files (e.g. `/screenshots/start_page.png`)_
+##🛠️ Tools & Technologies
 
+    Android Studio
 
+    Firebase (remote database)
 
+    RoomAPI (local database)
 
----
+    Stack Overflow
 
-## 🧩 Features
+    Trello
 
-- Browse teams from League of Legends, CS:GO, and Dota II
-- Access team details, player profiles, map location, and lane roles
-- Firebase integration for match data and remote database access
-- RoomAPI integration for local storage and data management
-- Drawer menu for quick navigation between games
-- Landscape support for improved UX
-- Visual prototyping using storyboard in Google Slides
-- Smooth UI with video backgrounds and custom graphics
+    Discord
 
----
+    Google Drive
 
-## 🛠️ Tech Stack & Tools
+    Adobe Photoshop 2020
 
-- **Android Studio**
-- **Java (Visual Programming, Drag & Drop)**
-- **RoomAPI** – local data handling
-- **Firebase** – remote database for matches and teams
-- **Google Maps API** – map integration
-- **Adobe Photoshop & Premiere Pro**
-- **Canva** – UI/UX prototyping
-- **Google Slides** – storyboard creation
-- **Trello** – team task management
-- **Discord** – team communication
-- **GitHub** – version control & collaboration
+    Adobe Premiere Pro 2020
 
----
+    Canva
 
-## 🧪 Database Entities
+##🧪 Prototype Design
 
-- `Team`: name, country, founded date, players, coach
-- `Player`: nickname, age, role, team
-- `eSport`: type (LoL, CS:GO, Dota II), tournaments
-- Queries:
+Before development, a storyboard prototype was designed using Google Slides, representing the app's user interaction flow. Each slide simulates a screen of the app, demonstrating how users navigate through features like:
+
+    Intro video and main menu (Choose Game, Data)
+
+    Game selection and team browsing
+
+    Drawer navigation menu
+
+    Team detail view, including map location and player information
+
+##📱 Application Features
+1. Start Page
+
+    Two buttons:
+
+        Games: navigates to game categories
+
+        Data: navigates to data management options
+
+    Intro video plays in the background
+
+2. Categories
+
+    User chooses between LoL, CS:GO, or Dota II using 3 ImageButtons
+
+3. Teams
+
+    Displays 10/25/10 teams respectively for each game category
+
+    Each team selection is handled through an ImageButton linked to an integer (chosenteamnumber)
+
+4. Drawer Menu
+
+    Custom icons and smooth animations
+
+    Enables quick switching between games
+
+5. Chosen Team
+
+    Displays:
+
+        Team name, location, creation date
+
+        Players by position (Lane buttons)
+
+        Team's map location (Map button)
+
+    Dynamically updates content based on selected team (getIntExtra logic)
+
+6. Image Player
+
+    Updates player images using:
+
+    img.setImageResource(R.drawable.toplolg);
+
+7. Map
+
+    Google Maps integration using OnMapReadyCallback
+
+    Each team location is marked using latitude and longitude variables
+
+8. Landscape Support
+
+    Custom layouts for landscape mode in every activity
+
+🗃️ Local Data – RoomAPI
+
+Entities:
+
+    Teams, Players, eSports
+
+Operations:
+
+    Insert, Delete, Update, Query
+
+    Queries include:
+
+        Players over 25
+
+        Teams with 5 members created after 2010
+
+##☁️ Remote Data – Firebase
+
+Firebase stores:
+
+    Match data (time, date, score)
+
+    Team info (name, roster, coach info)
+
+    Tournament participation
+
+Features:
+
+    Insert matches using insert_esl.match
+
+    Search queries (e.g., team with the most wins)
+
+    Spinner-based selection of match details
+
+##🔍 Data Collection
+
+Data was sourced from:
+
+    Official game sites
+
+    Team Instagram pages (for location info)
+
+    Riot Games official site (for LoL team history)
+
+    Online encyclopedias and verified online resources
   - Number of players over 25
   - Teams with 5 members founded after 2010
   - Most winning team across all games
-
----
-
-## 🚀 Installation
-
-> Note: This app is still in academic development stage and is not yet published on Play Store.
-
-Clone the repository:
-```bash
-git clone https://github.com/your-username/janus-esports.git
-
-Open with Android Studio and run on emulator or physical device.
-🧑‍🤝‍🧑 Team Members
-Name	Email	GitHub
-Orfeas Ioannis Pantelias-Gkionis (174951)	[email]	[GitHub]
-Polychronis Varvaris (185152)	[email]	[GitHub]
-Dimitrios Gavridis (174864)	[email]	[GitHub]
-📛 App Name Origin
-
-The name Janus is inspired by the Roman god of transitions, beginnings, and duality — symbolizing the evolution of eSports from a fringe activity into a globally recognized career. Just as Janus looks to both the past and the future, our app reflects both the roots and the potential of eSports culture.
-📬 Contact
-
-For questions, feedback or contributions, feel free to open an issue or email us. We’d be happy to collaborate or help.
-📝 License
-
-This project is released for academic and non-commercial purposes. All rights reserved to the development team.
-
-
----
-
-### ✅ Επόμενο βήμα:
-
-Αν θέλεις, μπορώ:
-
-- Να στο μεταφράσω και στα **Ελληνικά**.
-- Να σου φτιάξω το **`README.md` αρχείο έτοιμο για upload**.
-- Να σε βοηθήσω να ανεβάσεις screenshots ή να οργανώσουμε το GitHub repo.
-
-Τι προτιμάς να κάνουμε τώρα;
-
-
-ChatGPT ca
