@@ -8,7 +8,7 @@ Janus is an Android application developed as part of the Human-Computer Interact
 
 ![alt text](./all.png)
 
-##🛠️ Tools & Technologies
+🛠️ Tools & Technologies
 
     Android Studio
 
@@ -30,7 +30,7 @@ Janus is an Android application developed as part of the Human-Computer Interact
 
     Canva
 
-##🧪 Prototype Design
+🧪 Prototype Design
 
 Before development, a storyboard prototype was designed using Google Slides, representing the app's user interaction flow. Each slide simulates a screen of the app, demonstrating how users navigate through features like:
 
@@ -42,7 +42,7 @@ Before development, a storyboard prototype was designed using Google Slides, rep
 
     Team detail view, including map location and player information
 
-##📱 Application Features
+📱 Application Features
 1. Start Page
 
     Two buttons:
@@ -131,7 +131,7 @@ Features:
 
     Spinner-based selection of match details
 
-##🔍 Data Collection
+🔍 Data Collection
 
 Data was sourced from:
 
