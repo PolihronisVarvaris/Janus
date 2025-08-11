@@ -1,6 +1,6 @@
 # 🎮 Janus – eSports Info App
 
-  ![alt text](./Janus.png)
+  ![alt text](./Banner.png)
 
 ##📋 Project Overview
 
