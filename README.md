@@ -2,7 +2,7 @@
 
   ![alt text](./Banner.png)
 
-##📋 Project Overview
+📋 Project Overview
 
 Janus is an Android application developed as part of the Human-Computer Interaction course at the International Hellenic University (DI.PA.E). The goal was to build an informative app about eSports teams and tournaments in three game categories: League of Legends (LoL), CS:GO, and Dota II.
 
