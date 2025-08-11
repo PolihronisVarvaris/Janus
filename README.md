@@ -113,7 +113,7 @@ Operations:
 
         Teams with 5 members created after 2010
 
-##☁️ Remote Data – Firebase
+☁️ Remote Data – Firebase
 
 Firebase stores:
 
